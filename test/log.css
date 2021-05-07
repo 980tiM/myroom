@@ -1,13 +1,13 @@
 
 
 	body{
-		overflow: hidden;
 		background-color: lavender;
 		font-family: serif;
 		margin: 0px;
 	}
 	#main{
 		display: block;
+		overflow: hidden;
 		text-align: right;
 		background-image: url(https://cdn.pixabay.com/photo/2016/01/19/14/50/desk-1148994_1280.jpg);
 		background-position: 0 40%;
