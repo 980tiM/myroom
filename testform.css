@@ -1,0 +1,89 @@
+
+
+	body{
+		margin: 0px;
+		background-color: silver;
+		font-family: serif;
+	}
+
+	#list{
+		text-align: right;
+		/*background-color: royalblue;*/
+		padding: 0px;
+		margin: 0px;
+	}
+	#check,#close{
+		display: none;
+	}
+	#open{
+		display: inline;
+		cursor: pointer;
+	}
+	#open:hover{
+		opacity: 0.8;
+	}
+
+
+
+	#close,nav{
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		height: 100%;
+	}
+	#close{
+		z-index: 2;
+		/*background-color: gray;*/
+		width: 100%;
+		opacity: 0.8;
+		transition: 0.5s;
+	}
+	nav{
+		z-index: 3;
+		background-color: rgba(240,248,255,1);
+		width: 300px;
+		transition: 0.5s;
+		transform: translateX(-100%);
+	}
+	#check:checked ~ #close{
+		display: block;
+	}
+	#check:checked ~ nav{
+		transform: translateX(0);
+	}
+
+	#push{
+		display: inline-block;
+		background-color: aliceblue;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-right: 30px;
+		font-size: 35px;
+		border-radius: 10px;
+		box-shadow: 1px 1px 3px black;
+
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+	}
+	.button{
+		overflow: hidden;
+		text-align: left;
+	}
+	.ahref{
+		display: inline-block;
+		/*background-color: salmon;*/
+		text-decoration: none;
+		margin-top: 40px;
+		margin-left: 60px;
+		font-size: 25px;
+		text-shadow: 1px 1px 1px gray;
+	}
+	.ahref:hover{
+		opacity: 0.5;
+	}
+	.ahref:link,.ahref:visited{
+		color: black;
+	}
