@@ -1,59 +1,63 @@
 
 
-	body{
-		margin: 0px;
-		background-color: silver;
-		font-family: serif;
-	}
-
-	#list{
+	.list{
+		display: block;
+		width: 100%;
 		text-align: right;
+		position: fixed;
 		/*background-color: royalblue;*/
+		margin-top: 0px;
 		padding: 0px;
 		margin: 0px;
 	}
-	#check,#close{
+	#check01,#close01{
 		display: none;
 	}
-	#open{
-		/*display: inline;
-		cursor: pointer;*/
-
+	#open01{
 		display: inline-block;
+		text-align: right;
+		background-color: aliceblue;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 50px;
+		margin-right: 50px;
+		font-size: 50px;
+		font-family: sans-serif;
+		border-radius: 200px;
+		box-shadow: 1px 1px 2px black;
+
+		/*display: inline-block;
+		text-align: left;
 		background-color: aliceblue;
 		padding-top: 10px;
 		padding-bottom: 10px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-top: 20px;
+		margin-top: 30px;
 		margin-right: 30px;
-		font-size: 35px;
-		color: aliceblue;
-		border-radius: 100px;
-		box-shadow: 1px 1px 3px black;
-		text-shadow: 1px 1px 3px black;
+		font-size: 20px;
+		color: black;
+		border-radius: 10px;
+		box-shadow: 1px 1px 3px black;*/
 
 		-webkit-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-
 	}
-	#open:hover{
+	#open01:hover{
 		opacity: 0.8;
 	}
 
-
-
-	#close,nav{
+	#close01,nav{
 		position: fixed;
 		left: 0px;
 		top: 0px;
 		height: 100%;
 	}
-	#close{
+	#close01{
 		z-index: 2;
-		/*background-color: gray;*/
+		background-color: gray;
 		width: 100%;
 		opacity: 0.8;
 		transition: 0.5s;
@@ -62,48 +66,40 @@
 		z-index: 3;
 		background-color: rgba(240,248,255,1);
 		width: 300px;
+		margin-left: 20px;
 		transition: 0.5s;
-		transform: translateX(-100%);
+		transform: translateX(-350px);
 	}
-	#check:checked ~ #close{
+
+	#check01:checked ~ #close01{
 		display: block;
 	}
-	#check:checked ~ nav{
-		transform: translateX(0);
+
+	#check01:checked ~ nav{
+		transform: translate(0);
 	}
 
-	/*#push{
-		display: inline-block;
-		background-color: aliceblue;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-right: 30px;
-		font-size: 35px;
-		border-radius: 10px;
-		box-shadow: 1px 1px 3px black;
-
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-
-	}*/
 	.button{
-		overflow: hidden;
 		text-align: left;
+		font-family: serif;
 	}
-	.ahref{
-		display: inline-block;
-		/*background-color: salmon;*/
-		text-decoration: none;
-		margin-top: 40px;
-		margin-left: 60px;
-		font-size: 25px;
-		text-shadow: 1px 1px 1px gray;
+	p{
+		margin-top: 30px;
+		margin-left: 50px;
 	}
-	.ahref:hover{
-		opacity: 0.5;
-	}
-	.ahref:link,.ahref:visited{
-		color: black;
-	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
